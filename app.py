@@ -17,7 +17,7 @@ data = load_data()
 # =========================
 # Reduce size (IMPORTANT ⚡)
 # =========================
-data = data.sample(20000)  # 🔥 speed hack
+data = data.sample(min(20000, len(data)))  # 🔥 speed hack
 
 # =========================
 # Create Matrix
