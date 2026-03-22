@@ -7,7 +7,7 @@ from sklearn.metrics.pairwise import cosine_similarity
 # =========================
 @st.cache_data
 def load_data():
-    ratings = pd.read_csv("data/raw/ratings.csv")
+    ratings = pd.read_csv("data/raw/ratings_small.csv")
     movies = pd.read_csv("data/raw/movies.csv")
     data = pd.merge(ratings, movies, on="movieId")
     return data
