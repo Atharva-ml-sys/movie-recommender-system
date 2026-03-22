@@ -2,4 +2,5 @@ data/
 .DS_Store
 .ipynb_checkpoints/
 !data/raw/ratings_small.csv
+!data/raw/movies.csv
 
